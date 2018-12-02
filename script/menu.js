@@ -67,6 +67,18 @@ $(".motyw").on("click", () => {
 
     })
 
+    $("#text-art").css({
+      background: "rgb(40, 40, 40)",
+      color: "rgb(147, 147, 147)",
+
+    })
+
+    $(".glow").css({
+      background: "rgb(66, 66, 66)",
+      color: "rgb(195, 195, 195)",
+
+    })
+
 
 
 
@@ -96,6 +108,18 @@ $(".motyw").on("click", () => {
 
     $("body").css({
       background: "",
+
+    })
+
+    $("#text-art").css({
+      background: "",
+      color: ")",
+
+    })
+
+    $(".glow").css({
+      background: "",
+      color: "",
 
     })
 
