@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import "../../../css/menu.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(146, 179, 155);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.load {
+  width: 100%;
+  height: 100vh;
+  background: rgb(244, 245, 236);
+  position: fixed;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pic {
+    position: fixed;
+    margin-top: 8vh;
+    width: 100%;
+    height: 1200px;
+    background: url("../../../img/oparty.png") center center;
+    background-size: 150%;
+    z-index: -100;
+  }
+
+  .glow {
+    width: 100%;
+    height: 10vh;
+    margin-top: 1300px;
+    background: rgb(27, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(188, 209, 187);
+  }
+
+
+  .text {
+    width: 100%;
+    background: rgb(119, 156, 118);
+  }
+  p {
+    margin: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.45rem;
+    text-align: justify;
+  }
+}
+
+.autor {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgb(206, 233, 224);
+
+  .face {
+    width: 200px;
+    height: 200px;
+    background: url("../img/face.jpg");
+    background-size: cover;
+    border-radius: 1000px;
+    box-shadow: inset 0 0 50px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  h3 {
+    margin-left: 50px;
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+  }
+
+}
