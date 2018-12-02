@@ -7,7 +7,7 @@
 }
 
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(212, 212, 212);
 }
 
 a {
@@ -33,8 +33,17 @@ article {
   align-items: center;
 }
 
+hr {
+  width: 90%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 2vh;
+  border: 0;
+
+}
+
 .link {
-  width: 95%;
+  width: 90%;
   height: 600px;
   display: grid;
   grid-template: 25% 1fr / 1fr 1fr;
@@ -43,14 +52,16 @@ article {
   &--a {
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;
+
   }
 
   &--big {
     background: rgb(85, 103, 93) url("../../img/oparty.png") center center no-repeat;
     background-size: 150%;
     height: 1000px;
-    margin-top: 9vh;
+    margin-top: 15vh;
     display: grid;
     grid-template: 1fr / 1fr 1fr;
   }
@@ -66,10 +77,11 @@ article {
 
   &--middle {
     background: rgb(229, 237, 236);
-    height: 500px;
-    margin-top: 1vh;
+    height: 600px;
+    margin-top: 4vh;
     display: grid;
     grid-template: 1fr / 1fr;
+
   }
 
   &--middle-text {
@@ -78,7 +90,7 @@ article {
     z-index: 7;
     width: 100%;
     height: 150px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -100,26 +112,24 @@ article {
   }
 
   &__tag {
-    grid-area: 1 / 1 / 1 / 1 ;
+    grid-area: 1 / 1 / 1 / 1;
     display: flex;
     flex-direction: row;
     z-index: 8;
+    width: 100%;
     height: 75px;
-    margin: 10px;
-    align-items: center;
   }
 
   &__tag--small {
-    border: 0;
-    outline: none;
-    width: 180px;
-    height: 60px;
     margin: 10px;
-    background: rgba(0, 29, 59, 0.5);
-    color: rgb(240, 214, 244);
+    width: 180px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
     font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__text {
@@ -153,5 +163,20 @@ article {
     grid-area: 1 / 1 / 3 / 3;
     filter: grayscale(1);
     transition: 1s;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  background: rgb(181, 181, 181);
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
   }
 }

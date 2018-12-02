@@ -4,6 +4,10 @@ $("#open").on("click", () => {
     overflow: "hidden",
   })
 
+  $("#open").css({
+    transform: "rotate(180deg)",
+  })
+
   $(".menu_display")
   .css({
     display: "grid",
@@ -20,6 +24,10 @@ $("#back").on("click", () => {
     overflow: "auto",
   })
 
+  $("#open").css({
+    transform: "rotate(0deg)",
+  })
+
   $(".menu_display")
   .animate({
     height: "0vh",
@@ -28,5 +36,72 @@ $("#back").on("click", () => {
       display: "none",
     })
   })
+
+})
+
+//Dzien - Noc
+
+let click = 0;
+$(".motyw").on("click", () => {
+
+  if(click == 0) {
+
+    //przesuwak
+    $("#circle")
+    .css({
+      background: "rgb(51, 51, 51)",
+    })
+    .animate({
+      marginLeft: "135px",
+
+    }, 300)
+
+    //zmiana kolorow
+    $(".menu").css({
+      background: "rgb(50, 52, 54)",
+
+    })
+
+    $("body").css({
+      background: "rgb(36, 38, 41)",
+
+    })
+
+
+
+
+
+
+
+
+    click++;
+
+  } else {
+
+    //przesuwak
+    $("#circle")
+    .css({
+      background: "",
+    })
+    .animate({
+      marginLeft: "10px",
+
+    }, 300)
+
+    //zmiana kolorow
+    $(".menu").css({
+      background: "",
+
+    })
+
+    $("body").css({
+      background: "",
+
+    })
+
+
+    click = 0;
+  }
+
 
 })
