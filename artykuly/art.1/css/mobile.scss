@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(146, 179, 155);
+  background: rgb(221, 219, 201);
 }
 
 a {
@@ -45,45 +45,54 @@ article {
   }
 
   .glow {
-    width: 100%;
-    height: 9vh;
+    width: 80%;
+    height: 12vh;
     margin-top: 1550px;
-    background: rgb(199, 238, 238);
+    background: rgb(145, 138, 105);
+    border-radius: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index: 7;
-    color: rgb(29, 29, 29);
   }
 
   h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(226, 218, 185);
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 
   }
 
   .text {
-    margin-top: -10px;
+    margin-top: -6vh;
     width: 100%;
-    background: rgb(233, 241, 237);
+    background: rgb(221, 219, 201);
     z-index: 6;
+
   }
 
   .text__img {
-    width: 100%;
+    width: 80%;
+    border-radius: 20px;
     height: 200px;
     background: url("../../../img/vans.jpg") center center no-repeat;
-    background-size: 76%;
+    background-size: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
   }
 
   p {
-    margin-top: 5%;
+    margin-top: 15%;
     margin-bottom: 10%;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.45rem;
@@ -93,25 +102,24 @@ article {
 
 .autor {
   width: 100%;
-  height: 10vh;
-  margin-top: 5vh;
+  height: 15vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(210, 233, 225, 1);
+  background: rgb(209, 206, 180);
 
   .face {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background: url("../img/face.jpg");
     background-size: cover;
     border-radius: 1000px;
-    box-shadow: inset 0 0 50px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
   }
 
   h3 {
-    margin-left: 50px;
+    margin-top: 15px;
     font-size: 3rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
