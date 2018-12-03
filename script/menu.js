@@ -39,6 +39,9 @@ $("#back").on("click", () => {
 
 })
 
+
+
+
 //Dzien - Noc
 
 let click = 0;
@@ -76,6 +79,12 @@ $(".motyw").on("click", () => {
     $(".glow").css({
       background: "rgb(66, 66, 66)",
       color: "rgb(195, 195, 195)",
+
+    })
+
+    $(".menu__bar").css({
+      background: "url('../img/usmiech-light.png') center center no-repeat",
+      backgroundSize: "100px",
 
     })
 

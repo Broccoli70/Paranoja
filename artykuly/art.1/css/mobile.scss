@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
-@import "../../../css/menu.scss";
 
 * {
   margin: 0;
@@ -101,7 +100,7 @@ article {
   align-items: center;
   justify-content: center;
   background: rgba(210, 233, 225, 1);
-  
+
   .face {
     width: 120px;
     height: 120px;
