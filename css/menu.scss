@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 //MENU OPENING - START
 .menu_display {
@@ -6,24 +6,15 @@
   position: fixed;
   width: 100%;
   height: 0vh;
-
-  //gradient
-  background: #de7d2d; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #de7d2d 0%, #ef6653 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #de7d2d 0%,#ef6653 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #de7d2d 0%,#ef6653 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de7d2d', endColorstr='#ef6653',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  //gradient
-
-
+  background: rgb(231, 229, 219);
   z-index: 10;
   grid-template: 8vh 80% auto / 1fr;
 
 
   .head {
     width: 100%;
-    height: 8vh;
-    background: rgb(221, 97, 64);
+    height: 9vh;
+    background: rgb(202, 230, 215);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,13 +27,18 @@
   }
 
   h2 {
-    margin-top: 5vh;
+    margin-top: 2.5vh;
     font-size: 9rem;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+  }
+
+  h2:first-child {
+    margin-top: 5vh;
   }
 
   a {
-    color: rgb(255, 160, 0);
+    color: rgb(31, 33, 34);
   }
 
   .text {
@@ -62,7 +58,7 @@
     background: rgb(187, 46, 46);
     justify-self: center;
     font-size: 3rem;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     align-self: flex-end;
     color: rgb(227, 195, 171);
   }
