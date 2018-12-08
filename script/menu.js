@@ -1,5 +1,7 @@
 $("#open").on("click", () => {
 
+  $(".menu_display").removeClass("animation")
+
   $("html").css({
     overflow: "hidden",
   })
@@ -29,13 +31,15 @@ $("#back").on("click", () => {
   })
 
   $(".menu_display")
-  .animate({
-    height: "0vh",
-  }, 750, () => {
-      $(".menu_display").css({
-      display: "none",
-    })
-  })
+  .addClass("animation")
+
+  setTimeout( () => {
+      $(".menu_display")
+      .css({
+        display: "none",
+        height: "0",
+      })
+  }, 1000)
 
 })
 

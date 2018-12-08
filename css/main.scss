@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  -webkit-tap-highlight-color:transparent;
+  -moz-tap-highlight-color:transparent;
+  -o-tap-highlight-color:transparent;
+  tap-highlight-color:transparent;
+}
+
+.light {
+  padding: 25px;
+  background: rgb(139, 159, 119);
+}
