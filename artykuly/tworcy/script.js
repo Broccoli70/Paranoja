@@ -40,31 +40,89 @@ $(function(){
 
   })
 
-  //O AUTORACH
 
+
+  //O AUTORACH
   $("#btn1").on("click", () => {
-    $(".autor_display").addClass("showin")
+    $("html").css({
+      overflow: "hidden",
+    })
+    $(".autor_display")
+    .removeClass("animation")
+    .addClass("showin")
     $(".autor_display")
     .css({
       display: "grid",
     })
     $(".autor__text")
-    .delay(600)
+    .delay(100)
     .animate({
+      opacity: 0.5,
+    }, 300)
+    .animate({
+      marginLeft: "350%",
       opacity: 1,
-    }, 100)
-    .animate({
-      marginLeft: "300%",
-    }, 2000, ()=> {
-      $(".autor__text").css({display: "none",})
+    }, 1500, ()=> {
+      $(".autor__text").css({display: "none"})
     })
 
     $(".autor__pic")
-    .delay(1800)
+    .delay(1250)
     .animate({
       marginLeft:"200%",
-    }, 1500)
+    }, 1000)
 
+    setTimeout( () => {
+      $(".autor__text:nth-child(3)")
+      .css({
+        marginLeft: "-350%",
+        display: "flex",
+      })
+
+      $(".autor__text:nth-child(2)")
+      .css({
+        marginLeft: "-450%",
+        display: "flex",
+      })
+
+    }, 400)
+  })
+
+  $("#autor__back").on("click", () => {
+    $("html").css({
+      overflow: "auto",
+    })
+    $(".autor__pic").css({display: "none"})
+    $(".autor_display")
+    .removeClass("showin")
+    .addClass("animation")
+    setTimeout( () => {
+        $(".autor_display")
+        .css({
+          display: "none",
+        })
+        $(".autor__text")
+        .css({
+          display: "none",
+          marginLeft: "-350%"
+        })
+
+        $(".autor__pic")
+        .css({
+          marginLeft: "0",
+          display: "flex",
+        })
+    }, 500)
+
+    $(".autor__text:nth-child(3)")
+    .css({
+      marginLeft: "-300%",
+    })
+
+    $(".autor__text:nth-child(2)")
+    .css({
+      marginLeft: "-450%",
+    })
 
 
   })
